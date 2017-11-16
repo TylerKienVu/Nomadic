@@ -2,12 +2,14 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .hidden {
 	opacity: 0;
 }
 .dim {
-	filter: brightness(20%);
+	filter: brightness(40%);
 	-webkit-transition: all 2.5s;
 }
 #landing-page{
@@ -28,8 +30,8 @@ html, body {
 #intro-text {
 	position: absolute;
 	color: yellow;
-	top: 40vh;
-	left: 15vw;
+	top: 35vh;
+	left: 13vw;
 	text-align: center;
 	font-family: "Arial";
 	font-weight: bold;
@@ -44,8 +46,25 @@ html, body {
 	-webkit-transition: all 2.5s;
 }
 
-#popular-locations {
-	padding: 0;
-	width: 100vw;
-	height: 200vh;
+#intro-button {
+	color: white;
+	position: absolute;
+	top: 35vh;
+	left: 11vw;
+	font-family: "Arial";
+	font-weight: bold;
+	z-index: 2;
+	border-width: medium;
+	-webkit-transition: all 4s;
+}
+
+@media only screen and (min-width: 768px) {
+	#intro-text {
+		top: 40vh;
+		left: 40vw;
+	}
+	#intro-button{
+		top: 35vh;
+		left: 3vw;
+	}
 }

@@ -13,4 +13,7 @@ $(function() {
 	setTimeout(function() {
 		$('#socal').removeClass('hidden');
 	}, 4500);
+	setTimeout(function() {
+		$('#intro-button').removeClass('hidden');
+	}, 5500);
 });
