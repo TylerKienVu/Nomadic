@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.hidden {
+	opacity: 0;
+}
+.dim {
+	filter: brightness(30%);
+	-webkit-transition: all 2.5s;
+}
+#landing-page{
+	padding: 0;
+	padding-top:8vh;
+	width: 100vw;
+	height: 46vh;
+}
+#uci-logo {
+	max-height: 5vh;
+}
+#landing-img {
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
+	z-index: 1;
+}
+#intro-text {
+	position: absolute;
+	color: white;
+	top: 15vh;
+	left: 23vw;
+	text-align: center;
+	font-family: "Arial";
+	-webkit-transition: all 2.5s;
+	z-index: 2;
+}
+#socal {
+	-webkit-transition: all 2.5s;
+	color: yellow;
+	font-family: "Arial";
+	font-weight: bold;
+}
+
+#popular-locations {
+	padding: 0;
+	width: 100vw;
+	height: 200vh;
+}
