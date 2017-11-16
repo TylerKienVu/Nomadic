@@ -8,6 +8,9 @@ $(function() {
 		$('#intro-text').removeClass('hidden');
 	}, 3000);
 	setTimeout(function() {
+		$('#to').removeClass('hidden');
+	}, 3500);
+	setTimeout(function() {
 		$('#socal').removeClass('hidden');
-	}, 4000);
+	}, 4500);
 });
