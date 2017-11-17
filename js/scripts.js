@@ -52,9 +52,6 @@ $(function() {
 	}, 5600);
 	setTimeout(function() {
 		$('#email-button').removeClass('hidden');
-	}, 6500);
-	setTimeout(function() {
-		$('#smile').removeClass('hidden');
-	}, 7000);
+	}, 6800);
 	/*Contact*/
 });
