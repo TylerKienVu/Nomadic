@@ -4,6 +4,10 @@ html, body {
     padding: 0;
     max-width: 100%;
     overflow-x: hidden;
+    font-family: "Arial";
+}
+.smooth-transition{
+	-webkit-transition: all 2.5s;
 }
 .hidden {
 	opacity: 0;
@@ -12,11 +16,27 @@ html, body {
 	filter: brightness(40%);
 	-webkit-transition: all 2.5s;
 }
-#landing-page{
+.landing-page{
 	padding: 0;
 	padding-top:7vh;
 	width: 100vw;
 	height: 100vh;
+}
+.profile-container{
+	display: block;
+	height: 200px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15vh;
+	text-align: center;
+	-webkit-transition: all 2.5s;
+}
+.profile-picture{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
 }
 #uci-logo {
 	max-height: 5vh;
@@ -38,14 +58,18 @@ html, body {
 	-webkit-transition: all 2.5s;
 	z-index: 2;
 }
-#socal {
-	-webkit-transition: all 2.5s;
-}
-#to {
+#contact-text {
+	font-size: 1.5em;
+	position: absolute;
 	color: white;
+	top: 35vh;
+	left: 10vw;
+	text-align: center;
+	font-family: "Arial";
+	font-weight: bold;
 	-webkit-transition: all 2.5s;
+	z-index: 2;
 }
-
 #intro-button {
 	color: white;
 	position: absolute;
@@ -57,14 +81,42 @@ html, body {
 	border-width: medium;
 	-webkit-transition: all 4s;
 }
+#email-button{
+	color: white;
+	position: absolute;
+	top: 30vh;
+	left: 31vw;
+	font-family: "Arial";
+	font-weight: bold;
+	z-index: 2;
+	border-width: medium;
+	border-color: white;
+	-webkit-transition: all 4s;
+}
+#meet-the-team{
+	height: 200vh;
+	background-color: white;
+	padding-top: 15vh;
+}
 
 @media only screen and (min-width: 768px) {
 	#intro-text {
 		top: 40vh;
 		left: 40vw;
 	}
-	#intro-button{
+	#intro-button {
 		top: 35vh;
 		left: 3vw;
+	}
+	#meet-the-team {
+		height: 100vh;
+	}
+	.profile-container {
+		display: inline-block;
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+	#email-button{
+		left: 18vw;
 	}
 }
