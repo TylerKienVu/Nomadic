@@ -84,13 +84,12 @@ html, body {
 #email-button{
 	color: white;
 	position: absolute;
-	top: 30vh;
+	top: 25vh;
 	left: 31vw;
 	font-family: "Arial";
 	font-weight: bold;
 	z-index: 2;
 	border-width: medium;
-	border-color: white;
 	-webkit-transition: all 4s;
 }
 #meet-the-team{
